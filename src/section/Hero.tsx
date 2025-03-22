@@ -90,7 +90,7 @@ const Hero = () => {
                     </div>
                 ))}
             </div>
-            <div className='w-full mt-4 md:mt-8'>
+            <div className='w-full max-h-[180px] md:max-h-[300px]  lg:max-h-[500px] overflow-hidden mt-4 md:mt-8'>
                 <Carousel
                     opts={{
                         align: "start",
@@ -98,15 +98,15 @@ const Hero = () => {
                     }}
                     plugins={[plugin.current]}
                 >
-                    <CarouselContent>
+                    <CarouselContent className=' w-full'>
                         {sliderPhotos.map((data) => (
                             <CarouselItem key={data.title}>
                                 <div >
                                     <div className="w-full relative ">
                                         <Image
-                                            src={data.imgSrc || "/placeholder.svg"}
+                                            src={data.imgSrc}
                                             className="object-cover w-full h-full"
-                                            height={1000}
+                                            height={800}
                                             width={800}
                                             alt="package"
                                         />
