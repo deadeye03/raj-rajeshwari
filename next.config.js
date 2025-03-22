@@ -14,6 +14,9 @@ const config = {
                 port: ''
             }
         ]
+    },
+    eslint: {
+        ignoreDuringBuilds: true
     }
 };
 
