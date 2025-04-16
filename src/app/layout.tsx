@@ -1,3 +1,5 @@
+import Providers from "@/components/progress-bar-provider";
+import Footer from "@/section/Footer";
 import Navbar from "@/section/Navbar";
 import "@/styles/globals.css";
 
@@ -21,11 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
       <body>
-        <Navbar />
-        <main className="">
+        <Providers>
+          <Navbar />
+          <main className="">
 
-          {children}
-        </main>
+            {children}
+            <Footer />
+          </main>
+        </Providers>
       </body>
     </html>
   );

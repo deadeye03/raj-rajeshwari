@@ -15,3 +15,14 @@ export const getAllCategories = async () => {
     const data = await client.fetch(query)
     return data;
 }
+
+export const getFooterData = async () => {
+    const query = `*[_type == "footer"][0]{
+        title,
+        expolore,
+        help,
+        categories
+    }`
+    const data: FooterSectionSchemaType = await client.fetch(query)
+    return data
+}

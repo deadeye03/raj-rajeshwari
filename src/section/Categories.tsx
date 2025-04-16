@@ -14,8 +14,8 @@ const Categories = ({ categories }: { categories: CategoriesProps[] }) => {
                                 <Image
                                     src={category.imageUrl}
                                     alt={category.categoryName}
-                                    width={500}
-                                    height={350}
+                                    width={800}
+                                    height={550}
                                     className='object-cover w-full h-full hover:scale-110 transition-all duration-700 ease-in-out'
                                 />
                                 <span className='absolute block -bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-sm font-semibold bg-black/50 w-full py-2 text-center'>{category.categoryName}</span>

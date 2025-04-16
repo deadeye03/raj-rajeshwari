@@ -32,9 +32,9 @@ export default function Navbar() {
                 {/* Logo */}
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                     <Image
-                        src="/logo.webp"
+                        src="/logo.png"
                         alt="Logo"
-                        width={150}
+                        width={50}
                         height={40}
                         className=" rounded-full"
                     />
